@@ -1,0 +1,29 @@
+1. ¿Qué criterios usaría para decidir cuándo migrar de archivos planos (Excel) a un SGBD?
+
+Se debería migrar a un SGBD cuando:
+
+Existen datos duplicados y no hay una forma automática de evitarlos.
+
+Se presentan inconsistencias en la información (por ejemplo, notas diferentes para un mismo estudiante).
+
+Se necesita consultar información histórica de forma frecuente y Excel no lo permite fácilmente.
+
+Varias personas acceden y modifican los archivos al mismo tiempo, generando riesgo de pérdida o sobrescritura de datos.
+
+El volumen de datos crece y el manejo manual se vuelve ineficiente y propenso a errores.
+
+Se requiere seguridad, control de accesos y respaldos automáticos.
+
+2. ¿Qué tipo de SGBD (relacional o NoSQL) parece más adecuado para este contexto y por qué?
+
+El SGBD relacional es el más adecuado para este contexto porque:
+
+Los datos tienen estructura bien definida (estudiantes, asignaturas, notas).
+
+Existen relaciones claras entre las entidades que deben mantenerse con integridad referencial.
+
+Permite aplicar restricciones (PK, FK, UNIQUE) para evitar errores y duplicados.
+
+Facilita la creación de consultas SQL para obtener reportes académicos e históricos.
+
+Garantiza consistencia y confiabilidad, fundamentales en un sistema académico.
